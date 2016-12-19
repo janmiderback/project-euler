@@ -21,3 +21,9 @@ def is_prime(n):
         if n % (f + 2) == 0: return False
         f += 6
     return True
+
+def is_palindrome(n):
+    ns = str(n)
+    for i in range(0, len(ns) // 2):
+        if ns[i] != ns[len(ns) - 1 - i]: return False
+    return True
