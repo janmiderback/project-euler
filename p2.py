@@ -1,3 +1,4 @@
+#!/bin/python
 from lib import fib
 
 limit = 4000000

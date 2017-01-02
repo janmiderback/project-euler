@@ -1,3 +1,4 @@
+#!/bin/python
 from math import sqrt
 from lib import is_prime
 

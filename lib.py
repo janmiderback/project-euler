@@ -23,7 +23,16 @@ def is_prime(n):
     return True
 
 def is_palindrome(n):
+    """Checks if the argument is a palindrome."""
     ns = str(n)
     for i in range(0, len(ns) // 2):
         if ns[i] != ns[len(ns) - 1 - i]: return False
     return True
+
+def sumn(n):
+    m = n * (n + 1) / 2
+    return m * m
+
+def sumn_pow2(n):
+    """Returns the sum of the first n squared integers."""
+    return (n * (n + 1) * (2 * n + 1)) / 6

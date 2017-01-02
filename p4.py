@@ -1,3 +1,4 @@
+#!/bin/python
 from lib import is_palindrome
 
 # Brute force.
