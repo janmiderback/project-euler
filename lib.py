@@ -30,9 +30,24 @@ def is_palindrome(n):
     return True
 
 def sumn(n):
+    """Returns the sum of the first n integers [1, n]."""
     m = n * (n + 1) / 2
     return m * m
 
 def sumn_pow2(n):
-    """Returns the sum of the first n squared integers."""
+    """Returns the sum of the first n squared integers [1, n]."""
     return (n * (n + 1) * (2 * n + 1)) / 6
+
+def primes(lim):
+    """Returns the all prime numbers less or equal to lim."""
+    limsqrt = ceil(sqrt(lim))    
+    s = [ True ] * (lim + 1)
+    for i in range(2, ceil(sqrt(lim))):
+        if s[i]:
+            k = 0
+            while True:
+                l = i * i + k * i
+                if l > lim: break
+                k += 1
+                s[l] = False
+    return [i for i in range(2, lim + 1) if s[i]]
