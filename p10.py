@@ -1,4 +1,4 @@
-#/bin/bash
+#!/bin/python
 from lib import *
 
 p = primes(2000000)
